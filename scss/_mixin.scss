@@ -1,0 +1,43 @@
+@mixin grad($x: hsl(264, 100%, 61%), $y: hsl(293, 100%, 63%)) {
+  background: linear-gradient($y 50%, $x);
+}
+// flex
+@mixin flexcol {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+@mixin flexrow {
+  display: flex;
+  align-items: center;
+}
+
+// grid
+
+@mixin gridcontainer {
+  display: grid;
+  grid-template-columns: 35px 1fr 35px;
+  grid-template-rows: 80px 2fr 1fr;
+
+}
+@mixin gridfullapp {
+  display: grid;
+  grid-template-columns: 10px 1fr 10px;
+  grid-template-rows: 10px 70px 1fr 10px;
+}
+@mixin whiteblock {
+  position: absolute;
+  width: 50%;
+  height: 26px;
+  top: -15%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: white;
+  border-radius: 15px;
+}
+@mixin radiussam {
+  border-radius: 5px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
